@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="beta10_ws4d-java-se-full-dpws-debug-with-security">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/beta10_ws4d-java-se-full-dpws-debug-with-security.jar!/" />
+      <root url="jar://$PROJECT_DIR$/ws4d-java-parameter-value-util.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <NATIVE>
+      <root url="file://$PROJECT_DIR$" />
+    </NATIVE>
+    <SOURCES />
+  </library>
+</component>

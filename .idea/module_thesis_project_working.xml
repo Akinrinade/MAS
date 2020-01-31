@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_thesis_project_working" default="compile.module.thesis_project_working">
+  <dirname property="module.thesis_project_working.basedir" file="${ant.file.module_thesis_project_working}"/>
+  
+  <property name="module.jdk.home.thesis_project_working" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.thesis_project_working" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.thesis_project_working" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.thesis_project_working" value="-encoding UTF-8 -source 12 -target 12 ${compiler.args}"/>
+  
+  <property name="thesis_project_working.output.dir" value="undefined"/>
+  <property name="thesis_project_working.testoutput.dir" value="undefined"/>
+  
+  <path id="thesis_project_working.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="thesis_project_working.module.production.classpath"/>
+  
+  <path id="thesis_project_working.runtime.production.module.classpath"/>
+  
+  <path id="thesis_project_working.module.classpath"/>
+  
+  <path id="thesis_project_working.runtime.module.classpath"/>
+  
+  
+  <patternset id="excluded.from.module.thesis_project_working">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.thesis_project_working">
+    <patternset refid="excluded.from.module.thesis_project_working"/>
+  </patternset>
+  
+  
+  <target name="compile.module.thesis_project_working" depends="compile.module.thesis_project_working.production,compile.module.thesis_project_working.tests" description="Compile module thesis_project_working"/>
+  
+  <target name="compile.module.thesis_project_working.production" depends="register.custom.compilers" description="Compile module thesis_project_working; production classes"/>
+  
+  <target name="compile.module.thesis_project_working.tests" depends="register.custom.compilers,compile.module.thesis_project_working.production" description="compile module thesis_project_working; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.thesis_project_working" description="cleanup module">
+    <delete dir="${thesis_project_working.output.dir}"/>
+    <delete dir="${thesis_project_working.testoutput.dir}"/>
+  </target>
+</project>

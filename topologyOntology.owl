@@ -1,0 +1,654 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/srcim2018/ontologies/srcimOntology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/srcim2018/ontologies/srcimOntology">
+    <Prefix name="" IRI="http://www.semanticweb.org/srcim2018/ontologies/srcimOntology"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="srcimOntology" IRI="http://www.semanticweb.org/srcim2018/ontologies/srcimOntology/"/>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/ProductType2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/Entry"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/ConveyorB"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/ConveyorF"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/ID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/Priority"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/ConveyorD"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Conveyor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/ResourceEntry"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/consumes"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/Exit"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/ResourceExecutor"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/Destiny"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Product"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#DeviceID"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/ProductType3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/ConveyorC"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/ConveyorA"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/ProductType1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/ConveyorE"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Skill"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/plugged"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/NextConveyor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/BrushUp"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/ResourceExit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Resouce"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/BrushDown"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#InitialPosition"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/Description"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/ResourceBrush"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/executes"/>
+    </Declaration>
+    <DisjointClasses>
+        <Class IRI="/Product"/>
+        <Class IRI="/Resouce"/>
+        <Class IRI="/Skill"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="/Skill"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/BrushDown"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Skill"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/BrushUp"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Conveyor"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/ConveyorA"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Conveyor"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/ConveyorB"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Conveyor"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/ConveyorC"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Conveyor"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/ConveyorD"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Conveyor"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/ConveyorE"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Conveyor"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/ConveyorF"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Skill"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/Entry"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Skill"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/Exit"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Product"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/ProductType1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Product"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/ProductType2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Product"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/ProductType3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Resouce"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/ResourceBrush"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Resouce"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/ResourceEntry"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Resouce"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/ResourceExit"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/consumes"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/ProductType1"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/BrushUp"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/consumes"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/ProductType1"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/Entry"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/consumes"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/ProductType1"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/Exit"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/consumes"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/ProductType2"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/BrushDown"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/consumes"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/ProductType2"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/Entry"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/consumes"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/ProductType2"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/Exit"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/consumes"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/ProductType3"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/BrushDown"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/consumes"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/ProductType3"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/BrushUp"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/consumes"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/ProductType3"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/Entry"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/consumes"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/ProductType3"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/Exit"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/executes"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/ResourceBrush"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/BrushDown"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/executes"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/ResourceBrush"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/BrushUp"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/plugged"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/ResourceBrush"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/ConveyorD"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/executes"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/ResourceEntry"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/Entry"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/plugged"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/ResourceEntry"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/ConveyorA"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/executes"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/ResourceExit"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/Exit"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/plugged"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/ResourceExit"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/ConveyorA"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/Description"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/BrushDown"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Brushes the product in down position</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/ID"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/BrushDown"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">BrushDown</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/Priority"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/BrushDown"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/Description"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/BrushUp"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Brushes the product in up position</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/ID"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/BrushUp"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">BrushUp</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/Priority"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/BrushUp"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DeviceID"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/ConveyorA"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">EndpointReference [ address=urn:uuid:ffffffff-ffff-1fff-4fff-0050c28990d7, referenceProperties=null, referenceParameters=null, portType=null, serviceName=null{@portName= null } ]</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/Description"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/ConveyorA"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Conveyor in entry and exit position</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/ID"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/ConveyorA"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">ConveyorA</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/NextConveyor"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/ConveyorA"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">ConveyorB</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DeviceID"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/ConveyorB"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">EndpointReference [ address=urn:uuid:ffffffff-ffff-1fff-4fff-0050c28990d6, referenceProperties=null, referenceParameters=null, portType=null, serviceName=null{@portName= null } ]</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/Description"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/ConveyorB"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Conveyor in position B</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/ID"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/ConveyorB"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">ConveyorB</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/NextConveyor"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/ConveyorB"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">ConveyorC</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DeviceID"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/ConveyorC"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">EndpointReference [ address=urn:uuid:ffffffff-ffff-1fff-4fff-0050c28990d1, referenceProperties=null, referenceParameters=null, portType=null, serviceName=null{@portName= null } ]</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/Description"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/ConveyorC"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Conveyor in position C with rotation</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/ID"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/ConveyorC"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">ConveyorC</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/NextConveyor"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/ConveyorC"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">ConveyorD</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DeviceID"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/ConveyorD"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">EndpointReference [ address=urn:uuid:ffffffff-ffff-1fff-4fff-0050c28990d0, referenceProperties=null, referenceParameters=null, portType=null, serviceName=null{@portName= null } ]</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/Description"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/ConveyorD"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Conveyor in position D</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/ID"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/ConveyorD"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">ConveyorD</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/NextConveyor"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/ConveyorD"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">ConveyorE</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DeviceID"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/ConveyorE"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">EndpointReference [ address=urn:uuid:ffffffff-ffff-1fff-4fff-0050c28990ce, referenceProperties=null, referenceParameters=null, portType=null, serviceName=null{@portName= null } ]</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/Description"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/ConveyorE"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Conveyor in position E with rotation</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/ID"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/ConveyorE"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">ConveyorE</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/NextConveyor"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/ConveyorE"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">ConveyorF</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DeviceID"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/ConveyorF"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">EndpointReference [ address=urn:uuid:ffffffff-ffff-1fff-4fff-0050c28990d4, referenceProperties=null, referenceParameters=null, portType=null, serviceName=null{@portName= null } ]</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/Description"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/ConveyorF"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Conveyor in position F</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/ID"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/ConveyorF"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">ConveyorF</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/NextConveyor"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/ConveyorF"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">ConveyorA</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/Description"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/Entry"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The operator adds a new product in the entry point</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/ID"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/Entry"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Entry</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/Priority"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/Entry"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/Description"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/Exit"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The operator removes the product from the exit point</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/ID"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/Exit"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Exit</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/Priority"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/Exit"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#InitialPosition"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/ProductType1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">ConveyorA</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/Description"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/ProductType1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Type of products which consumes BrushUp skill</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/ID"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/ProductType1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">ProductType1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#InitialPosition"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/ProductType2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">ConveyorA</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/Description"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/ProductType2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Type of products which consumes BrushDown skill</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/ID"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/ProductType2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">ProductType2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#InitialPosition"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/ProductType3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">ConveyorA</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/Description"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/ProductType3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Type of products which consumes BrushUp and BrushDown skills</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/ID"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/ProductType3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">ProductType3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DeviceID"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/ResourceBrush"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">EndpointReference [ address=urn:uuid:ffffffff-ffff-1fff-4fff-0050c28990d5, referenceProperties=null, referenceParameters=null, portType=null, serviceName=null{@portName= null } ]</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/Description"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/ResourceBrush"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Brush station with two positions</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/ID"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/ResourceBrush"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">ResourceBrush</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DeviceID"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/ResourceEntry"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/Description"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/ResourceEntry"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Human operator that adds the product in entry position</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/ID"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/ResourceEntry"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">ResourceEntry</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DeviceID"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/ResourceExit"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/Description"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/ResourceExit"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Human operator that removes the product from exit position</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/ID"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/srcim2018/ontologies/ResourceExit"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">ResourceExit</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/consumes"/>
+        <Class IRI="/Product"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/executes"/>
+        <Class IRI="/Resouce"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/plugged"/>
+        <Class IRI="/Resouce"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/consumes"/>
+        <Class IRI="/Skill"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/executes"/>
+        <Class IRI="/Skill"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/plugged"/>
+        <Class IRI="/Conveyor"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#DeviceID"/>
+        <Class IRI="/Conveyor"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#DeviceID"/>
+        <Class IRI="/Resouce"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#InitialPosition"/>
+        <Class IRI="/Product"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/Description"/>
+        <Class IRI="/Conveyor"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/Description"/>
+        <Class IRI="/Product"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/Description"/>
+        <Class IRI="/Resouce"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/Description"/>
+        <Class IRI="/Skill"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/Destiny"/>
+        <Class IRI="/Product"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/ID"/>
+        <Class IRI="/Conveyor"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/ID"/>
+        <Class IRI="/Product"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/ID"/>
+        <Class IRI="/Resouce"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/ID"/>
+        <Class IRI="/Skill"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/NextConveyor"/>
+        <Class IRI="/Conveyor"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/Priority"/>
+        <Class IRI="/Skill"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/ResourceExecutor"/>
+        <Class IRI="/Product"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#DeviceID"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#InitialPosition"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/Description"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/Destiny"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/ID"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/NextConveyor"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/Priority"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/ResourceExecutor"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+
